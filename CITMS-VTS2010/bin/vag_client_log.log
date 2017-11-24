@@ -1,0 +1,4 @@
+
+--- 2017-05-12 18:04:01 Logging Started on ---
+18:04:01 [D] LoadVtduSDK stream_client.dll fail, errcrcode:0!  [CPlaySDKMgr::LoadVtduSDK:562]
+18:04:01 [D] Vag client sdk init success!  [VAG_Init:110]

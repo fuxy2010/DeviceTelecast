@@ -1,0 +1,23 @@
+{
+	"Devices":	[{
+			"ID":	0,
+			"SerialNumber":	"747217269",
+			"ChannelNumber":	1024,
+			"StartChannel":	1,
+			"AlarmInNum":	16,
+			"AlarmOutNum":	4,
+			"IPChanNum":	1024,
+			"MirrorChanNum":	0,
+			"StartMirrorChanNo":	0,
+			"LocalNodeName":	"192.168.0.237",
+			"DeviceType":	203,
+			"DiskNum":	0,
+			"LoginUserName":	"admin",
+			"LoginUserPwd":	"citms@b7",
+			"DeviceIP":	"192.168.0.237",
+			"DeviceMultiIP":	"0.0.0.0",
+			"DevicePort":	8000,
+			"DeviceName":	"CVR_SERVER",
+			"Channels":	[]
+		}]
+}

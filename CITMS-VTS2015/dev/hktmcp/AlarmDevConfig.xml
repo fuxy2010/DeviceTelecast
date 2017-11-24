@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<PlugInfo>
+<PluginDLL Id="1" Support="0" ListenPort="8855">HikAlarmDev.dll</PluginDLL>
+<PluginDLL Id="2" Support="0" ListenPort="8866">JNAlarmDev.dll</PluginDLL>
+<PluginDLL Id="3" Support="0" ListenPort="8877">CKAlarmDev.dll</PluginDLL>
+<PluginDLL Id="4" Support="1" ListenPort="7200">HikAlarmDvr.dll</PluginDLL>
+<PluginDLL Id="5" Support="0" ListenPort="8833">DaHuaAlarmDvr.dll</PluginDLL>
+</PlugInfo>

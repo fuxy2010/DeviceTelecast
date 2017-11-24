@@ -1,0 +1,123 @@
+rtsp://平台IP:端口/dss/monitor/params?cameraid=设备编号%24通道号&substream=码流类型
+平台IP：设备添加的平台，例如172.7.3.249
+端口：默认9090端口
+设备编号：平台上设备自己的编号，例如1000004
+通道号：设备下通道，从0（通道一）开始。
+码流类型：1代表主码流，2代表辅码流
+如现在DSS上的NVR设备的第一个通道实时流为rtsp://192.168.0.190:9090/dss/monitor/params?cameraid=1000003%240&substream=1
+
+C->S
+OPTIONS rtsp://192.168.0.190:9090/dss/monitor/params?cameraid=1000003%240&substream=1 RTSP/1.0
+CSeq: 2
+User-Agent: LibVLC/2.2.4 (LIVE555 Streaming Media v2016.02.22)
+
+S->C
+RTSP/1.0 200 OK
+CSeq: 2
+Date: Thu, Dec 01 2016 01:37:55 GMT
+Public: OPTIONS, DESCRIBE, SETUP, GET_PARAMETER, SET_PARAMETER
+Server: DSS RedirectService/V1.2
+
+C->S
+DESCRIBE rtsp://192.168.0.190:9090/dss/monitor/params?cameraid=1000003%240&substream=1 RTSP/1.0
+CSeq: 3
+User-Agent: LibVLC/2.2.4 (LIVE555 Streaming Media v2016.02.22)
+Accept: application/sdp
+
+S->C
+RTSP/1.0 302 Moved Temporarily
+CSeq: 3
+Date: Thu, Dec 01 2016 01:37:55 GMT
+Location: rtsp://192.168.0.190:9100/monitor/9?token=16&trackID=0
+Server: DSS RedirectService/V1.2
+
+
+C->S
+DESCRIBE rtsp://192.168.0.190:9100/monitor/9?token=16&trackID=0 RTSP/1.0
+CSeq: 4
+User-Agent: LibVLC/2.2.4 (LIVE555 Streaming Media v2016.02.22)
+Accept: application/sdp
+
+S->C
+RTSP/1.0 200 OK
+Server: Dahua Rtsp Server/2.0
+CSeq: 4
+Content-Base: rtsp://192.168.0.190:9100/monitor/9?token=16&trackID=0
+Content-Type: application/sdp
+Content-Length: 346
+Cache-Control: must-revalidate
+x-Accept-Dynamic-Rate: 1
+
+v=0
+o=- 2257610468 2257610468 IN IP4 0.0.0.0
+s=RTSP Session/2.0
+c=IN IP4 0.0.0.0
+t=0 0
+a=control:*
+a=range:npt=now-
+a=packetization-supported:DH
+m=video 0 RTP/AVP 96
+a=control:trackID=0
+a=framerate:10.000000
+a=rtpmap:96 H264/90000
+a=fmtp:96 packetization-mode=1;profile-level-id=4D001F;sprop-parameter-sets=Z00AH5WoFAFuQA==,aO48gA==
+
+
+C->S
+SETUP rtsp://192.168.0.190:9100/monitor/9?token=16&trackID=0/trackID=0 RTSP/1.0
+CSeq: 5
+User-Agent: LibVLC/2.2.4 (LIVE555 Streaming Media v2016.02.22)
+Transport: RTP/AVP;unicast;client_port=55148-55149
+
+S->C
+RTSP/1.0 200 OK
+Server: Dahua Rtsp Server/2.0
+CSeq: 5
+Session: 1377328104994;timeout=60
+Transport: RTP/AVP/UDP;unicast;client_port=55148-55149;server_port=10012-10013;ssrc=0001D200
+x-dynamic-rate: 1
+
+C->S
+PLAY rtsp://192.168.0.190:9100/monitor/9?token=16&trackID=0 RTSP/1.0
+CSeq: 6
+User-Agent: LibVLC/2.2.4 (LIVE555 Streaming Media v2016.02.22)
+Session: 1377328104994
+Range: npt=0.000-
+
+S->C
+RTSP/1.0 200 OK
+Server: Dahua Rtsp Server/2.0
+CSeq: 6
+Session: 1377328104994
+RTP-Info: url=trackID=0;seq=0;rtptime=17910
+Range: npt=0.000000-
+
+
+C->S
+GET_PARAMETER rtsp://192.168.0.190:9100/monitor/9?token=16&trackID=0 RTSP/1.0
+CSeq: 7
+User-Agent: LibVLC/2.2.4 (LIVE555 Streaming Media v2016.02.22)
+Session: 1377328104994
+
+S->C
+RTSP/1.0 200 OK
+Server: Dahua Rtsp Server/2.0
+CSeq: 7
+Session: 1377328104994
+
+C->S
+GET_PARAMETER rtsp://192.168.0.190:9100/monitor/9?token=16&trackID=0 RTSP/1.0
+CSeq: 8
+User-Agent: LibVLC/2.2.4 (LIVE555 Streaming Media v2016.02.22)
+Session: 1377328104994
+
+S->C
+RTSP/1.0 200 OK
+Server: Dahua Rtsp Server/2.0
+CSeq: 8
+Session: 1377328104994
+
+
+
+
+

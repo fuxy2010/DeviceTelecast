@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Plugins>
+ <Plugin id = "hik">play_plugins/hik_play_plugin/hik_play_plugin.dll</Plugin>
+ <Plugin id = "dahua">play_plugins/dahua_play_plugin/dahua_play_plugin.dll</Plugin>
+ <Plugin id = "chengfeng">play_plugins/chengfeng_play_plugin/chengfeng_play_plugin.dll</Plugin>
+ <Plugin id = "db33">play_plugins/db33_play_plugin/db33_play_plugin.dll</Plugin>
+ <Plugin id = "hik">play_plugins/hik_play_plugin/hik_play_plugin.dll</Plugin>
+</Plugins>

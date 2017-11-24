@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Plugins>
+  <Plugin id="hc8">device_plugins/hik_device_plugin/hik_plugin.dll</Plugin>
+  <Plugin id="dahua">device_plugins/dahua_device_plugin/dahua_plugin.dll</Plugin>
+</Plugins>

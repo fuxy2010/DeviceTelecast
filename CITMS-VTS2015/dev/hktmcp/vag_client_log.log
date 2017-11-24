@@ -1,0 +1,8 @@
+
+--- 2017-07-17 15:54:42 Logging Started on ---
+15:54:42 [D] 3-PAG-<53>	<DeviceObject_Init>,DahuaPlugin: DeviceObject_Init  [pfnDeviceSdkLogCB:19]
+15:54:42 [D] 3-PAG-<42>	<DeviceObject_Init>,HikPlugin: DeviceObject_Init  [pfnDeviceSdkLogCB:19]
+15:54:43 [D] Vag client sdk init success!  [VAG_Init:110]
+15:55:26 [D] 3-PAG-<68>	<DeviceObject_Fini>,DahuaPlugin: DeviceObject_Fini  [pfnDeviceSdkLogCB:19]
+15:55:26 [D] 3-PAG-<64>	<DeviceObject_Fini>,HikPlugin: DeviceObject_Fini  [pfnDeviceSdkLogCB:19]
+15:55:26 [D] Vag client sdk fini success!  [VAG_Fini:141]

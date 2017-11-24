@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B1C5E8C6-B0C6-4BF0-9A92-07CBE0357258}</ProjectGuid>
+    <RootNamespace>CITMSVTS</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;OSIP_MT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\useragent;..\jrtplib;..\utility\boost_1_46_1;..\utility\tut;..\utility\H264;..\utility\ffmpeg\include;..\utility\poco-1.7.6\include;..\module;..\codec;..\task;..\thread;..\misc;..\amr-nb;..\json;..\avi;..\PCMPlayer;..\sipua;..\wua;..\ffmpeg\include;..\rtmp\include;..\rtmp;..\dev\dh;..\dev\dp;..\dev;..\dev\hktmcp;..\http;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <TargetMachine>MachineX86</TargetMachine>
+      <StackReserveSize>
+      </StackReserveSize>
+      <StackCommitSize>
+      </StackCommitSize>
+      <HeapReserveSize>
+      </HeapReserveSize>
+      <HeapCommitSize>
+      </HeapCommitSize>
+      <LargeAddressAware>
+      </LargeAddressAware>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>copy $(OutDir)$(ProjectName).exe ..\bin\CITMS-VTS.exe</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;OSIP_MT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\useragent;..\jrtplib;..\utility\boost_1_46_1;..\utility\tut;..\utility\H264;..\utility\ffmpeg\include;..\utility\poco-1.7.6\include;..\module;..\codec;..\task;..\thread;..\misc;..\amr-nb;..\json;..\PCMPlayer;..\sipua;..\wua;..\ffmpeg\include;..\rtmp\include;..\rtmp;..\dev\dh;..\dev\dp;..\dev;..\http;..\dev\hktmcp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>copy $(OutDir)$(ProjectName).exe ..\bin\CITMS-VTS.exe</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\json\json_internalarray.inl" />
+    <None Include="..\json\json_internalmap.inl" />
+    <None Include="..\json\json_valueiterator.inl" />
+    <None Include="ReadMe.txt" />
+    <None Include="res\CITMSVTS.ico" />
+    <None Include="res\CITMSVTS.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\codec\AudioCodec.h" />
+    <ClInclude Include="..\codec\WUACodec.h" />
+    <ClInclude Include="..\dev\Config.h" />
+    <ClInclude Include="..\dev\DateTime.h" />
+    <ClInclude Include="..\dev\dh\DHStreamAccessPlugin.h" />
+    <ClInclude Include="..\dev\dh\DHVideoServerConnect.h" />
+    <ClInclude Include="..\dev\dp\DPStreamAccessPlugin.h" />
+    <ClInclude Include="..\dev\dp\DPVideoServerConnect.h" />
+    <ClInclude Include="..\dev\dp\WideMultiChange.h" />
+    <ClInclude Include="..\dev\Packet.h" />
+    <ClInclude Include="..\dev\Protocol.h" />
+    <ClInclude Include="..\dev\RetCode.h" />
+    <ClInclude Include="..\dev\SharedData.h" />
+    <ClInclude Include="..\dev\TypeDef.h" />
+    <ClInclude Include="..\http\HttpService.h" />
+    <ClInclude Include="..\json\autolink.h" />
+    <ClInclude Include="..\json\config.h" />
+    <ClInclude Include="..\json\features.h" />
+    <ClInclude Include="..\json\forwards.h" />
+    <ClInclude Include="..\json\json.h" />
+    <ClInclude Include="..\json\jsontest.h" />
+    <ClInclude Include="..\json\json_batchallocator.h" />
+    <ClInclude Include="..\json\reader.h" />
+    <ClInclude Include="..\json\value.h" />
+    <ClInclude Include="..\json\writer.h" />
+    <ClInclude Include="..\misc\CharacterTransfer.h" />
+    <ClInclude Include="..\misc\Chronograph.h" />
+    <ClInclude Include="..\misc\CommandContextParse.h" />
+    <ClInclude Include="..\misc\ConfigBox.h" />
+    <ClInclude Include="..\misc\librtmp_send264.h" />
+    <ClInclude Include="..\misc\Locker.h" />
+    <ClInclude Include="..\misc\Logger.h" />
+    <ClInclude Include="..\misc\MiscTool.h" />
+    <ClInclude Include="..\misc\Sizescale.h" />
+    <ClInclude Include="..\misc\TimeConsuming.h" />
+    <ClInclude Include="..\module\IModule.h" />
+    <ClInclude Include="..\module\JRTPSession.h" />
+    <ClInclude Include="..\module\ModuleManager.h" />
+    <ClInclude Include="..\module\RTMPSession.h" />
+    <ClInclude Include="..\rtmp\amf.h" />
+    <ClInclude Include="..\rtmp\bytes.h" />
+    <ClInclude Include="..\rtmp\dh.h" />
+    <ClInclude Include="..\rtmp\dhgroups.h" />
+    <ClInclude Include="..\rtmp\handshake.h" />
+    <ClInclude Include="..\rtmp\http.h" />
+    <ClInclude Include="..\rtmp\log.h" />
+    <ClInclude Include="..\rtmp\rtmp.h" />
+    <ClInclude Include="..\rtmp\rtmp_sys.h" />
+    <ClInclude Include="..\rtmp\sps_decode.h" />
+    <ClInclude Include="..\task\DPSDKLivePullTask.h" />
+    <ClInclude Include="..\task\DPSDKVodPullTask.h" />
+    <ClInclude Include="..\task\HKPSDKLivePullTask.h" />
+    <ClInclude Include="..\task\HKPSDKVodPullTask.h" />
+    <ClInclude Include="..\task\SDKRecvTask.h" />
+    <ClInclude Include="..\task\RTMPPushTask.h" />
+    <ClInclude Include="..\task\RTSPRecvTask.h" />
+    <ClInclude Include="..\task\Task.h" />
+    <ClInclude Include="..\task\TaskCounter.h" />
+    <ClInclude Include="..\task\VUASendMediaTask.h" />
+    <ClInclude Include="..\thread\BaseThread.h" />
+    <ClInclude Include="..\thread\RegisterThread.h" />
+    <ClInclude Include="..\thread\TaskThread.h" />
+    <ClInclude Include="..\useragent\generaldef.h" />
+    <ClInclude Include="..\useragent\mediadata.h" />
+    <ClInclude Include="..\useragent\scheduleserver.h" />
+    <ClInclude Include="..\useragent\useragent.h" />
+    <ClInclude Include="RecodeSound.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="CITMSVTS.h" />
+    <ClInclude Include="CITMSVTSDlg.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\codec\WUACodec.cpp" />
+    <ClCompile Include="..\dev\dh\DHStreamAccessPlugin.cpp" />
+    <ClCompile Include="..\dev\dh\DHVideoServerConnect.cpp" />
+    <ClCompile Include="..\dev\dp\DPStreamAccessPlugin.cpp" />
+    <ClCompile Include="..\dev\dp\DPVideoServerConnect.cpp" />
+    <ClCompile Include="..\http\HttpService.cpp" />
+    <ClCompile Include="..\json\jsontest.cpp" />
+    <ClCompile Include="..\json\json_reader.cpp" />
+    <ClCompile Include="..\json\json_value.cpp" />
+    <ClCompile Include="..\json\json_writer.cpp" />
+    <ClCompile Include="..\json\main_jsontest.cpp" />
+    <ClCompile Include="..\json\main_jsontestrunner.cpp" />
+    <ClCompile Include="..\misc\CommandContextParse.cpp" />
+    <ClCompile Include="..\misc\ConfigBox.cpp" />
+    <ClCompile Include="..\misc\librtmp_send264.cpp" />
+    <ClCompile Include="..\misc\Logger.cpp" />
+    <ClCompile Include="..\misc\MiscTool.cpp" />
+    <ClCompile Include="..\misc\simplest_librtmp_send264.cpp" />
+    <ClCompile Include="..\misc\Sizescale.cpp" />
+    <ClCompile Include="..\module\JRTPSession.cpp" />
+    <ClCompile Include="..\module\ModuleManager.cpp" />
+    <ClCompile Include="..\module\RTMPSession.cpp" />
+    <ClCompile Include="..\rtmp\amf.c" />
+    <ClCompile Include="..\rtmp\hashswf.c" />
+    <ClCompile Include="..\rtmp\log.c" />
+    <ClCompile Include="..\rtmp\parseurl.c" />
+    <ClCompile Include="..\rtmp\rtmp.c" />
+    <ClCompile Include="..\task\DPSDKLivePullTask.cpp" />
+    <ClCompile Include="..\task\DPSDKVodPullTask.cpp" />
+    <ClCompile Include="..\task\HKPSDKLivePullTask.cpp" />
+    <ClCompile Include="..\task\HKPSDKVodPullTask.cpp" />
+    <ClCompile Include="..\task\SDKRecvTask.cpp" />
+    <ClCompile Include="..\task\RTMPPushTask.cpp" />
+    <ClCompile Include="..\task\RTSPRecvTask.cpp" />
+    <ClCompile Include="..\task\VUASendMediaTask.cpp" />
+    <ClCompile Include="..\thread\BaseThread.cpp" />
+    <ClCompile Include="..\thread\RegisterThread.cpp" />
+    <ClCompile Include="..\thread\TaskThread.cpp" />
+    <ClCompile Include="..\useragent\ScheduleServer.cpp" />
+    <ClCompile Include="..\useragent\UserAgent.cpp" />
+    <ClCompile Include="RecodeSound.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CITMSVTS.cpp" />
+    <ClCompile Include="CITMSVTSDlg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CITMSVTS.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="CITMSVTS.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

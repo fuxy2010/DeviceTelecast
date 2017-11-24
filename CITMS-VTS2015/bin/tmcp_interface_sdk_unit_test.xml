@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="42" failures="22" disabled="0" errors="0" timestamp="2014-08-08T08:50:59" time="13.093" name="AllTests">
+  <testsuite name="open_sdk_1" tests="1" failures="0" disabled="0" errors="0" time="0.054">
+    <testcase name="test_tmcp_sdk_open" status="run" time="0.052" classname="open_sdk_1" />
+  </testsuite>
+  <testsuite name="get_sdk_version_2" tests="1" failures="0" disabled="0" errors="0" time="0.003">
+    <testcase name="test_tmcp_get_sdk_version" status="run" time="0.003" classname="get_sdk_version_2" />
+  </testsuite>
+  <testsuite name="login_logout_false_server_address_3" tests="1" failures="1" disabled="0" errors="0" time="3.021">
+    <testcase name="test_tmcp_login_logout_cms" status="run" time="3.02" classname="login_logout_false_server_address_3">
+      <failure message="e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:89&#x0A;Value of: login_info.error_code&#x0A;  Actual: 28&#x0A;Expected: -10003" type=""><![CDATA[e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:89
+Value of: login_info.error_code
+  Actual: 28
+Expected: -10003]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="login_logout_username_error_4" tests="1" failures="1" disabled="0" errors="0" time="3.013">
+    <testcase name="test_tmcp_login_logout_cms" status="run" time="3.009" classname="login_logout_username_error_4">
+      <failure message="e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:102&#x0A;Value of: login_info.error_code&#x0A;  Actual: 28&#x0A;Expected: -10002" type=""><![CDATA[e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:102
+Value of: login_info.error_code
+  Actual: 28
+Expected: -10002]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="login_logout_password_error_5" tests="1" failures="1" disabled="0" errors="0" time="3.011">
+    <testcase name="test_tmcp_login_logout_cms" status="run" time="3.008" classname="login_logout_password_error_5">
+      <failure message="e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:114&#x0A;Value of: login_info.error_code&#x0A;  Actual: 28&#x0A;Expected: -10001" type=""><![CDATA[e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:114
+Value of: login_info.error_code
+  Actual: 28
+Expected: -10001]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="login_logout_error_parameter_6" tests="1" failures="1" disabled="0" errors="0" time="0.039">
+    <testcase name="test_tmcp_login_logout_cms" status="run" time="0.036" classname="login_logout_error_parameter_6">
+      <failure message="e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:125&#x0A;Value of: g_login_handle&#x0A;  Actual: -10007&#x0A;Expected: 0" type=""><![CDATA[e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:125
+Value of: g_login_handle
+  Actual: -10007
+Expected: 0]]></failure>
+      <failure message="e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:126&#x0A;Value of: login_info.error_code&#x0A;  Actual: -858993460&#x0A;Expected: -10007" type=""><![CDATA[e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:126
+Value of: login_info.error_code
+  Actual: -858993460
+Expected: -10007]]></failure>
+      <failure message="e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:131&#x0A;Value of: g_login_handle&#x0A;  Actual: -10007&#x0A;Expected: 0" type=""><![CDATA[e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:131
+Value of: g_login_handle
+  Actual: -10007
+Expected: 0]]></failure>
+      <failure message="e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:132&#x0A;Value of: login_info.error_code&#x0A;  Actual: -858993460&#x0A;Expected: -10007" type=""><![CDATA[e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:132
+Value of: login_info.error_code
+  Actual: -858993460
+Expected: -10007]]></failure>
+      <failure message="e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:137&#x0A;Value of: g_login_handle&#x0A;  Actual: -10007&#x0A;Expected: 0" type=""><![CDATA[e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:137
+Value of: g_login_handle
+  Actual: -10007
+Expected: 0]]></failure>
+      <failure message="e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:138&#x0A;Value of: login_info.error_code&#x0A;  Actual: -858993460&#x0A;Expected: -10007" type=""><![CDATA[e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:138
+Value of: login_info.error_code
+  Actual: -858993460
+Expected: -10007]]></failure>
+      <failure message="e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:143&#x0A;Value of: g_login_handle&#x0A;  Actual: -10007&#x0A;Expected: 0" type=""><![CDATA[e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:143
+Value of: g_login_handle
+  Actual: -10007
+Expected: 0]]></failure>
+      <failure message="e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:144&#x0A;Value of: login_info.error_code&#x0A;  Actual: -858993460&#x0A;Expected: -10007" type=""><![CDATA[e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:144
+Value of: login_info.error_code
+  Actual: -858993460
+Expected: -10007]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="login_succeed_10" tests="1" failures="1" disabled="0" errors="0" time="3.013">
+    <testcase name="test_tmcp_login_logout_cms" status="run" time="3.009" classname="login_succeed_10">
+      <failure message="e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:160&#x0A;Expected: (0) != (g_login_handle), actual: 0 vs 0" type=""><![CDATA[e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:160
+Expected: (0) != (g_login_handle), actual: 0 vs 0]]></failure>
+      <failure message="e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:161&#x0A;Value of: login_info.error_code&#x0A;  Actual: 28&#x0A;Expected: 0" type=""><![CDATA[e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:161
+Value of: login_info.error_code
+  Actual: 28
+Expected: 0]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="get_tmcp_time_11" tests="1" failures="1" disabled="0" errors="0" time="0.014">
+    <testcase name="test_get_tmcp_time" status="run" time="0.012" classname="get_tmcp_time_11">
+      <failure message="e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:172&#x0A;Value of: tmcp_get_now_time(time_now, g_login_handle)&#x0A;  Actual: -10007&#x0A;Expected: 0" type=""><![CDATA[e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:172
+Value of: tmcp_get_now_time(time_now, g_login_handle)
+  Actual: -10007
+Expected: 0]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="tmcp_get_region_by_id_12" tests="1" failures="1" disabled="0" errors="0" time="0.008">
+    <testcase name="test_tmcp_get_region_by_id" status="run" time="0.006" classname="tmcp_get_region_by_id_12">
+      <failure message="e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:191&#x0A;Value of: tmcp_get_region_by_id(g_true_region_id, &amp;_region, g_login_handle)&#x0A;  Actual: -10007&#x0A;Expected: 0" type=""><![CDATA[e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:191
+Value of: tmcp_get_region_by_id(g_true_region_id, &_region, g_login_handle)
+  Actual: -10007
+Expected: 0]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="tmcp_get_control_uint_by_id_13" tests="1" failures="1" disabled="0" errors="0" time="0.013">
+    <testcase name="test_tmcp_get_control_uint_by_id" status="run" time="0.01" classname="tmcp_get_control_uint_by_id_13">
+      <failure message="e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:213&#x0A;Value of: tmcp_get_control_uint_by_id(g_true_control_unit_id, &amp;_controlunit, g_login_handle)&#x0A;  Actual: -10007&#x0A;Expected: 0" type=""><![CDATA[e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:213
+Value of: tmcp_get_control_uint_by_id(g_true_control_unit_id, &_controlunit, g_login_handle)
+  Actual: -10007
+Expected: 0]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="tmcp_get_all_control_uints_14" tests="1" failures="1" disabled="0" errors="0" time="0.01">
+    <testcase name="test_tmcp_get_all_control_uints" status="run" time="0.007" classname="tmcp_get_all_control_uints_14">
+      <failure message="e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:224&#x0A;Value of: tmcp_get_all_control_uints(&amp;_controllist, g_login_handle)&#x0A;  Actual: -10007&#x0A;Expected: 0" type=""><![CDATA[e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:224
+Value of: tmcp_get_all_control_uints(&_controllist, g_login_handle)
+  Actual: -10007
+Expected: 0]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="tmcp_get_all_region_by_control_unit_id_15" tests="1" failures="1" disabled="0" errors="0" time="0.025">
+    <testcase name="test_tmcp_get_all_region_by_control_unit_id" status="run" time="0.008" classname="tmcp_get_all_region_by_control_unit_id_15">
+      <failure message="e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:247&#x0A;Value of: tmcp_get_all_region_by_control_unit_id( g_true_control_unit_id, &amp;_region, g_login_handle)&#x0A;  Actual: -10007&#x0A;Expected: 0" type=""><![CDATA[e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:247
+Value of: tmcp_get_all_region_by_control_unit_id( g_true_control_unit_id, &_region, g_login_handle)
+  Actual: -10007
+Expected: 0]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="tmcp_get_all_device_by_control_unit_id_16" tests="1" failures="1" disabled="0" errors="0" time="0.024">
+    <testcase name="test_tmcp_get_all_device_by_control_unit_id" status="run" time="0.016" classname="tmcp_get_all_device_by_control_unit_id_16">
+      <failure message="e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:260&#x0A;Value of: tmcp_get_all_device(&amp;_device, g_login_handle)&#x0A;  Actual: -10007&#x0A;Expected: 0" type=""><![CDATA[e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:260
+Value of: tmcp_get_all_device(&_device, g_login_handle)
+  Actual: -10007
+Expected: 0]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="tmcp_get_all_camera_by_control_unit_id_17" tests="1" failures="1" disabled="0" errors="0" time="0.018">
+    <testcase name="test_tmcp_get_all_camera_by_control_unit_id" status="run" time="0.006" classname="tmcp_get_all_camera_by_control_unit_id_17">
+      <failure message="e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:283&#x0A;Value of: tmcp_get_all_camera_by_control_unit_id( g_true_control_unit_id, &amp;_camera, g_login_handle)&#x0A;  Actual: -10007&#x0A;Expected: 0" type=""><![CDATA[e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:283
+Value of: tmcp_get_all_camera_by_control_unit_id( g_true_control_unit_id, &_camera, g_login_handle)
+  Actual: -10007
+Expected: 0]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="tmcp_get_all_server_info_18" tests="1" failures="1" disabled="0" errors="0" time="0.025">
+    <testcase name="test_tmcp_get_all_server_info" status="run" time="0.02" classname="tmcp_get_all_server_info_18">
+      <failure message="e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:297&#x0A;Value of: tmcp_get_all_server_info(&amp;_server, g_login_handle)&#x0A;  Actual: -10007&#x0A;Expected: 0" type=""><![CDATA[e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:297
+Value of: tmcp_get_all_server_info(&_server, g_login_handle)
+  Actual: -10007
+Expected: 0]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="tmcp_get_all_resource_19" tests="1" failures="1" disabled="0" errors="0" time="0.008">
+    <testcase name="test_tmcp_get_all_resource" status="run" time="0.006" classname="tmcp_get_all_resource_19">
+      <failure message="e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:310&#x0A;Value of: tmcp_get_all_resource(&amp;_all, g_login_handle)&#x0A;  Actual: -10007&#x0A;Expected: 0" type=""><![CDATA[e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:310
+Value of: tmcp_get_all_resource(&_all, g_login_handle)
+  Actual: -10007
+Expected: 0]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="tmcp_get_camera_stream_path_20" tests="1" failures="1" disabled="0" errors="0" time="0.013">
+    <testcase name="test_tmcp_get_camera_stream_path" status="run" time="0.004" classname="tmcp_get_camera_stream_path_20">
+      <failure message="unknown file&#x0A;SEH exception with code 0xc0000005 thrown in the test body." type=""><![CDATA[unknown file
+SEH exception with code 0xc0000005 thrown in the test body.]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="tmcp_start_stream_21" tests="1" failures="1" disabled="0" errors="0" time="0.006">
+    <testcase name="test_tmcp_start_stream" status="run" time="0.004" classname="tmcp_start_stream_21">
+      <failure message="unknown file&#x0A;SEH exception with code 0xc0000005 thrown in the test body." type=""><![CDATA[unknown file
+SEH exception with code 0xc0000005 thrown in the test body.]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="tmcp_stop_stream_22" tests="1" failures="1" disabled="0" errors="0" time="0.024">
+    <testcase name="test_tmcp_stop_stream" status="run" time="0.014" classname="tmcp_stop_stream_22">
+      <failure message="unknown file&#x0A;SEH exception with code 0xc0000005 thrown in the test body." type=""><![CDATA[unknown file
+SEH exception with code 0xc0000005 thrown in the test body.]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="tmcp_snap_picture_23" tests="1" failures="1" disabled="0" errors="0" time="0.008">
+    <testcase name="test_tmcp_snap_picture" status="run" time="0.006" classname="tmcp_snap_picture_23">
+      <failure message="unknown file&#x0A;SEH exception with code 0xc0000005 thrown in the test body." type=""><![CDATA[unknown file
+SEH exception with code 0xc0000005 thrown in the test body.]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="tmcp_search_video_24" tests="1" failures="0" disabled="0" errors="0" time="0.032">
+    <testcase name="test_tmcp_search_video" status="run" time="0.03" classname="tmcp_search_video_24" />
+  </testsuite>
+  <testsuite name="tmcp_start_playback_25" tests="1" failures="0" disabled="0" errors="0" time="0.064">
+    <testcase name="test_tmcp_start_playback" status="run" time="0.062" classname="tmcp_start_playback_25" />
+  </testsuite>
+  <testsuite name="tmcp_snap_picture_playback_26" tests="1" failures="0" disabled="0" errors="0" time="0.007">
+    <testcase name="test_tmcp_snap_picture_playback" status="run" time="0.004" classname="tmcp_snap_picture_playback_26" />
+  </testsuite>
+  <testsuite name="tmcp_stop_playback_27" tests="1" failures="0" disabled="0" errors="0" time="0.005">
+    <testcase name="test_tmcp_stop_playback" status="run" time="0.004" classname="tmcp_stop_playback_27" />
+  </testsuite>
+  <testsuite name="tmcp_pause_playback_28" tests="1" failures="0" disabled="0" errors="0" time="0.005">
+    <testcase name="test_tmcp_pause_playback" status="run" time="0.004" classname="tmcp_pause_playback_28" />
+  </testsuite>
+  <testsuite name="tmcp_resume_playback_29" tests="1" failures="0" disabled="0" errors="0" time="0.006">
+    <testcase name="test_tmcp_resume_playback" status="run" time="0.004" classname="tmcp_resume_playback_29" />
+  </testsuite>
+  <testsuite name="tmcp_abs_random_playback_29" tests="1" failures="0" disabled="0" errors="0" time="0.004">
+    <testcase name="test_tmcp_abs_random_playback" status="run" time="0.003" classname="tmcp_abs_random_playback_29" />
+  </testsuite>
+  <testsuite name="tmcp_change_rate_playback_29" tests="1" failures="0" disabled="0" errors="0" time="0.007">
+    <testcase name="test_tmcp_change_rate_playback" status="run" time="0.004" classname="tmcp_change_rate_playback_29" />
+  </testsuite>
+  <testsuite name="tmcp_abs_random_playback_30" tests="1" failures="0" disabled="0" errors="0" time="0.005">
+    <testcase name="test_tmcp_abs_random_playback" status="run" time="0.004" classname="tmcp_abs_random_playback_30" />
+  </testsuite>
+  <testsuite name="tmcp_start_download_31" tests="1" failures="0" disabled="0" errors="0" time="0.003">
+    <testcase name="test_tmcp_start_download" status="run" time="0.003" classname="tmcp_start_download_31" />
+  </testsuite>
+  <testsuite name="tmcp_stop_download_32" tests="1" failures="0" disabled="0" errors="0" time="0.003">
+    <testcase name="test_tmcp_stop_download" status="run" time="0.003" classname="tmcp_stop_download_32" />
+  </testsuite>
+  <testsuite name="tmcp_query_download_progress_33" tests="1" failures="0" disabled="0" errors="0" time="0.003">
+    <testcase name="test_tmcp_query_download_progress" status="run" time="0.002" classname="tmcp_query_download_progress_33" />
+  </testsuite>
+  <testsuite name="tmcp_send_ptz_control_34" tests="1" failures="1" disabled="0" errors="0" time="0.002">
+    <testcase name="test_tmcp_send_ptz_control" status="run" time="0.002" classname="tmcp_send_ptz_control_34">
+      <failure message="unknown file&#x0A;SEH exception with code 0xc0000005 thrown in the test body." type=""><![CDATA[unknown file
+SEH exception with code 0xc0000005 thrown in the test body.]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="tmcp_get_all_decode_device_35" tests="1" failures="1" disabled="0" errors="0" time="0.003">
+    <testcase name="test_tmcp_get_all_decode_device" status="run" time="0.003" classname="tmcp_get_all_decode_device_35">
+      <failure message="e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:679&#x0A;Value of: tmcp_get_all_decode_device(&amp;list, g_login_handle)&#x0A;  Actual: -10007&#x0A;Expected: 0" type=""><![CDATA[e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:679
+Value of: tmcp_get_all_decode_device(&list, g_login_handle)
+  Actual: -10007
+Expected: 0]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="tmcp_get_all_tvwall_info_36" tests="1" failures="1" disabled="0" errors="0" time="0.003">
+    <testcase name="test_tmcp_get_all_tvwall_info" status="run" time="0.003" classname="tmcp_get_all_tvwall_info_36">
+      <failure message="e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:689&#x0A;Value of: tmcp_get_all_tvwall_info(&amp;list, g_login_handle)&#x0A;  Actual: -10007&#x0A;Expected: 0" type=""><![CDATA[e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:689
+Value of: tmcp_get_all_tvwall_info(&list, g_login_handle)
+  Actual: -10007
+Expected: 0]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="tmcp_preview_on_tvwall_37" tests="1" failures="0" disabled="0" errors="0" time="0.003">
+    <testcase name="test_tmcp_preview_on_tvwall" status="run" time="0.002" classname="tmcp_preview_on_tvwall_37" />
+  </testsuite>
+  <testsuite name="tmcp_stop_preview_tvwall_38" tests="1" failures="0" disabled="0" errors="0" time="0.003">
+    <testcase name="test_tmcp_stop_preview_tvwall" status="run" time="0.003" classname="tmcp_stop_preview_tvwall_38" />
+  </testsuite>
+  <testsuite name="tmcp_pause_download_39" tests="1" failures="0" disabled="0" errors="0" time="0.003">
+    <testcase name="test_tmcp_pause_download" status="run" time="0.002" classname="tmcp_pause_download_39" />
+  </testsuite>
+  <testsuite name="tmcp_resume_download_40" tests="1" failures="0" disabled="0" errors="0" time="0.002">
+    <testcase name="test_tmcp_resume_download" status="run" time="0.002" classname="tmcp_resume_download_40" />
+  </testsuite>
+  <testsuite name="tmcp_get_error_info_41" tests="1" failures="0" disabled="0" errors="0" time="0.002">
+    <testcase name="test_tmcp_get_error_info" status="run" time="0.002" classname="tmcp_get_error_info_41" />
+  </testsuite>
+  <testsuite name="logout_succeed_99" tests="1" failures="1" disabled="0" errors="0" time="0.002">
+    <testcase name="test_tmcp_login_logout_cms" status="run" time="0.002" classname="logout_succeed_99">
+      <failure message="e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:742&#x0A;Value of: tmcp_logout_cms(g_login_handle)&#x0A;  Actual: -10007&#x0A;Expected: 0" type=""><![CDATA[e:\traffic\v3.1.0\src\sdks\tmcp_interface_sdk\tmcp_interface_sdk_unit_test\tmcp_interface_sdk_unit_test.cpp:742
+Value of: tmcp_logout_cms(g_login_handle)
+  Actual: -10007
+Expected: 0]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="close_sdk_100" tests="1" failures="0" disabled="0" errors="0" time="0.446">
+    <testcase name="test_tmcp_sdk_close" status="run" time="0.445" classname="close_sdk_100" />
+  </testsuite>
+</testsuites>

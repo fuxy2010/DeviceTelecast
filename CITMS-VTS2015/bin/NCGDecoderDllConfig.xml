@@ -1,0 +1,26 @@
+<!--
+
+配置说明：
+DECOCER_TAG：解码标示
+PATH：对应解码插件路径
+<DecoderUseageInfo>	插件的使用方式
+OnlyGetStream = true 解码插件将视频流回调给客户端 客户端自己解码(此时调用者在播放时只需要设置码流回调即可，不需要传入窗口句柄)
+OnlyGetStream = false 插件解码(此时调用者在播放时需要传入窗口句柄)
+-->
+
+<DecorderInfo>
+<Info>
+	<DECOCER_TAG>hikvision</DECOCER_TAG>
+	<PATH>\hikvision_v3\hikvision_v3.dll</PATH>
+        <DecoderUseageInfo>
+	    <OnlyGetStream>true</OnlyGetStream>
+	</DecoderUseageInfo>
+</Info>
+<Info>
+	<DECOCER_TAG>dahua</DECOCER_TAG>
+	<PATH>\dahua\dahua_v3.dll</PATH>
+        <DecoderUseageInfo>
+	    <OnlyGetStream>true</OnlyGetStream>
+	</DecoderUseageInfo>
+</Info>
+</DecorderInfo>

@@ -1,0 +1,428 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="misc">
+      <UniqueIdentifier>{9ff8db86-40bb-45d3-8aa9-4a1e6745e88f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module">
+      <UniqueIdentifier>{21d548ca-f69d-479b-a76f-7c92b6a92d08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="codec">
+      <UniqueIdentifier>{b0df66de-f0da-4a17-8677-343678b01abc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="task">
+      <UniqueIdentifier>{60d32ad7-d7f0-4490-92b2-45fadfdf47d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thread">
+      <UniqueIdentifier>{152ad37c-f2cb-4a10-869f-a0d86db398f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="useragent">
+      <UniqueIdentifier>{87ecf0d9-3b4a-47ff-adcd-77b5e433e7a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dev">
+      <UniqueIdentifier>{bd1c5384-7622-481a-8a63-a7b0e05ce3ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dev\dh">
+      <UniqueIdentifier>{5f965c21-5b1b-4a5b-a88e-e7b5b137bdb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="http">
+      <UniqueIdentifier>{48c16301-ffe6-40bd-8b05-3fc0350cae45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dev\dp">
+      <UniqueIdentifier>{b9ce061e-f4e4-4fcf-9d15-c8045a5d517f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtmp">
+      <UniqueIdentifier>{be26b697-82f0-422a-a6c3-1e8446d9f021}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="json">
+      <UniqueIdentifier>{54a8f0ef-56d7-4a3f-8249-02928c90f79a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\CITMSVGW.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\CITMSVGW.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\json\json_internalarray.inl">
+      <Filter>json</Filter>
+    </None>
+    <None Include="..\json\json_internalmap.inl">
+      <Filter>json</Filter>
+    </None>
+    <None Include="..\json\json_valueiterator.inl">
+      <Filter>json</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CITMSVGW.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CITMSVGWDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\codec\AudioCodec.h">
+      <Filter>codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\CharacterTransfer.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\Chronograph.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\CommandContextParse.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\ConfigBox.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\Locker.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\Logger.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\MiscTool.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\TimeConsuming.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\module\IModule.h">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\module\ModuleManager.h">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\module\JRTPSession.h">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thread\BaseThread.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thread\RegisterThread.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thread\TaskThread.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\task\Task.h">
+      <Filter>task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\task\TaskCounter.h">
+      <Filter>task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\task\VUASendMediaTask.h">
+      <Filter>task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\useragent\generaldef.h">
+      <Filter>useragent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\useragent\mediadata.h">
+      <Filter>useragent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\useragent\scheduleserver.h">
+      <Filter>useragent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\useragent\useragent.h">
+      <Filter>useragent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\Sizescale.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\codec\WUACodec.h">
+      <Filter>codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\module\RTMPSession.h">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="RecodeSound.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dev\dh\DHVideoServerConnect.h">
+      <Filter>dev\dh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dev\Config.h">
+      <Filter>dev</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dev\DateTime.h">
+      <Filter>dev</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dev\Packet.h">
+      <Filter>dev</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dev\Protocol.h">
+      <Filter>dev</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dev\RetCode.h">
+      <Filter>dev</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dev\SharedData.h">
+      <Filter>dev</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dev\TypeDef.h">
+      <Filter>dev</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dev\dh\DHStreamAccessPlugin.h">
+      <Filter>dev\dh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\http\HttpService.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dev\dp\DPStreamAccessPlugin.h">
+      <Filter>dev\dp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dev\dp\DPVideoServerConnect.h">
+      <Filter>dev\dp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dev\dp\WideMultiChange.h">
+      <Filter>dev\dp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\librtmp_send264.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtmp\amf.h">
+      <Filter>rtmp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtmp\bytes.h">
+      <Filter>rtmp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtmp\dh.h">
+      <Filter>rtmp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtmp\dhgroups.h">
+      <Filter>rtmp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtmp\handshake.h">
+      <Filter>rtmp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtmp\http.h">
+      <Filter>rtmp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtmp\log.h">
+      <Filter>rtmp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtmp\rtmp.h">
+      <Filter>rtmp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtmp\rtmp_sys.h">
+      <Filter>rtmp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtmp\sps_decode.h">
+      <Filter>rtmp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\task\RTSPRecvTask.h">
+      <Filter>task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\task\RTMPPushTask.h">
+      <Filter>task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\json\autolink.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\json\config.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\json\features.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\json\forwards.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\json\json.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\json\json_batchallocator.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\json\jsontest.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\json\reader.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\json\value.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\json\writer.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\task\SDKRecvTask.h">
+      <Filter>task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\task\DPSDKLivePullTask.h">
+      <Filter>task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\task\HKPSDKLivePullTask.h">
+      <Filter>task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\task\HKPSDKVodPullTask.h">
+      <Filter>task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\task\DPSDKVodPullTask.h">
+      <Filter>task</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CITMSVGW.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CITMSVGWDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\CommandContextParse.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\ConfigBox.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\Logger.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\MiscTool.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\module\ModuleManager.cpp">
+      <Filter>module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\module\JRTPSession.cpp">
+      <Filter>module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thread\BaseThread.cpp">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thread\RegisterThread.cpp">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thread\TaskThread.cpp">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\task\VUASendMediaTask.cpp">
+      <Filter>task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\useragent\ScheduleServer.cpp">
+      <Filter>useragent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\useragent\UserAgent.cpp">
+      <Filter>useragent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\Sizescale.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\codec\WUACodec.cpp">
+      <Filter>codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\module\RTMPSession.cpp">
+      <Filter>module</Filter>
+    </ClCompile>
+    <ClCompile Include="RecodeSound.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dev\dh\DHVideoServerConnect.cpp">
+      <Filter>dev\dh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dev\dh\DHStreamAccessPlugin.cpp">
+      <Filter>dev\dh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\http\HttpService.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dev\dp\DPStreamAccessPlugin.cpp">
+      <Filter>dev\dp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dev\dp\DPVideoServerConnect.cpp">
+      <Filter>dev\dp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\librtmp_send264.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\simplest_librtmp_send264.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rtmp\amf.c">
+      <Filter>rtmp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rtmp\hashswf.c">
+      <Filter>rtmp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rtmp\log.c">
+      <Filter>rtmp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rtmp\parseurl.c">
+      <Filter>rtmp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rtmp\rtmp.c">
+      <Filter>rtmp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\task\RTSPRecvTask.cpp">
+      <Filter>task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\task\RTMPPushTask.cpp">
+      <Filter>task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\json\json_reader.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\json\json_value.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\json\json_writer.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\json\jsontest.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\json\main_jsontest.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\json\main_jsontestrunner.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\task\SDKRecvTask.cpp">
+      <Filter>task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\task\DPSDKLivePullTask.cpp">
+      <Filter>task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\task\HKPSDKLivePullTask.cpp">
+      <Filter>task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\task\HKPSDKVodPullTask.cpp">
+      <Filter>task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\task\DPSDKVodPullTask.cpp">
+      <Filter>task</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CITMSVGW.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
